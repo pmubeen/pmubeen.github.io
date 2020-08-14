@@ -1,0 +1,14 @@
+.navbar {
+    background: rgb(0,0,6);
+    background: linear-gradient(180deg, rgba(0,0,6,0.8578781854538691) 0%, rgba(0,0,0,0.5329482134650736) 46%, rgba(2,0,36,0) 100%);
+    padding-bottom: 10px;
+}
+.carousel-inner{
+    background-size:cover;
+    background-position: center;
+}
+.graphic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
