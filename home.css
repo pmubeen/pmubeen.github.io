@@ -1,14 +1,38 @@
 .navbar {
-    background: rgb(0,0,6);
-    background: linear-gradient(180deg, rgba(0,0,6,0.8578781854538691) 0%, rgba(0,0,0,0.5329482134650736) 46%, rgba(2,0,36,0) 100%);
-    padding-bottom: 10px;
+  background: rgb(0, 0, 6);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 6, 0.8578781854538691) 0%,
+    rgba(0, 0, 0, 0.5329482134650736) 46%,
+    rgba(2, 0, 36, 0) 100%
+  );
+  padding-bottom: 10px;
 }
-.carousel-inner{
-    background-size:cover;
-    background-position: center;
+.carousel-inner {
+  background-size: cover;
+  background-position: center;
 }
 .graphic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+#nav-but {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: background-color 0.5s;
+}
+#nav-but:hover {
+  background-color: rgb(73, 73, 73);
+}
+.brand {
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding:4px 10px;
+  transition: background-color 0.5s, color 0.5s;
+}
+.brand:hover {
+    background-color: white;
+    color:rgb(0, 0, 0);
+  }
