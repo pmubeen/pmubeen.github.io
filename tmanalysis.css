@@ -52,7 +52,7 @@
   padding: 100px 0px 0px 0px;
 }
 body {
-  background-image: url("./images/carousel/3.jpg");
+  background-image: url("./images/carousel/2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -63,7 +63,7 @@ body {
   padding: 20px;
   max-width: 800px;
   height: fit-content;
-  background-color:rgb(233, 233, 233);
+  background-color: rgb(233, 233, 233);
 }
 #title-box {
   width: fit-content;
@@ -71,7 +71,7 @@ body {
   margin-left: auto;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: rgb(35, 34, 65);
+  background-color: rgb(43, 72, 99);
   color: rgb(255, 255, 255);
   -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
@@ -97,17 +97,36 @@ body {
   margin-left: auto;
   margin-top: 20px;
 }
-.social-button {
-  display: inline;
+#works {
+  max-width: 1000px;
+  margin: 40px auto 10px auto;
 }
-.social-button a img {
-  height: 35px;
-  width: 35px;
+.card {
+  border: 0px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
+  transition: transform ease-out 0.2s;
 }
-.intro:first-letter {
-  float: left;
-  font-size: 45px;
-  line-height: 1;
-  font-weight: bold;
-  margin-right: 9px;
+.card-body {
+  padding-top: 100px;
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 18%,
+    rgba(0, 0, 0, 0.6365896700477065) 59%,
+    rgba(2, 0, 36, 0) 100%
+  );
+}
+.card-title {
+  color: white;
+}
+.card-text {
+  color: white;
+}
+.card:hover {
+  transform: scale(1.05);
 }

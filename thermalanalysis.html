@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+  <title>Thermal and Mechanical Analysis</title>
+  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./tmanalysis.css" />
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="./index.html"
+      ><div class="brand d-flex align-items-center">
+        <img class="image-back" src="images/nav-pages/backsign.png" />itsmubeen
+      </div></a
+    >
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutme.html"
+            ><button type="button" id="nav-but" class="btn">About Me</button></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><button type="button" id="nav-but" class="btn">Contact</button></a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div
+      class="jumbotron jumbotron-fluid"
+      style="background-color: transparent;"
+    >
+        <div id="title-box">
+          <h1 class="display-4 d-none d-lg-block">Thermal and Mechanical Analysis</h1>
+          <h1 class="display-4 d-none d-md-block d-lg-none">Thermal and Mechanical Analysis</h1>
+          <h1 class="d-md-none">Thermal and Mechanical Analysis</h2>
+        </div>
+        <div id="image-box">
+          <img src="images/carousel/graphic/TManalysis.png" style="max-height: 300px; max-width: 300px;"/>
+        </div>
+        <div id="sub-title-box">
+          <p style="font-size:15px; margin:0px; max-width: 600px;">Utilizing CAD and finite element analysis softwares like Solidworks and Siemens NX to simulate various stress tests in various environments. This is applicable in various fields like civil, automotive, mechanical and aerospace engineering. Various structures are first simulated for their performance and then tested. The tests are compared to simulations to improve the simulation, product design and develop better models to explain behaviour. Here are some works I have done in this field:</p>
+        </div>
+        <div id="works" class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/tmanal/ebox.png); background-size: cover; background-position:center;">
+                <div class="card-body">
+                  <div class="mt-auto">
+                    <h5 class="card-title">Thermal Analysis of an Electronics Box</h5>
+                    <p class="card-text">Application of heat transfer principles to electronics box attached to a radiator.</p>
+                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button" style="    background-color: rgb(43, 72, 99);
+                    border-color: rgb(24, 34, 54);">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/tmanal/plate.png); background-size: cover; background-position:center;">
+                <div class="card-body d-flex align-items-end">
+                  <div>
+                    <h5 class="card-title">FEM thermal analysis of a plate in MATLAB</h5>
+                    <p class="card-text">Comparing contour map over time simulated in MATLAB and Siemens NX.</p>
+                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button" style="    background-color: rgb(43, 72, 99);
+                    border-color: rgb(24, 34, 54);">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/tmanal/pcbmodes.png); background-size: cover; background-position:center;">
+                <div class="card-body d-flex align-items-end">
+                    <div>
+                        <h5 class="card-title">Natural frequencies of a PCB.</h5>
+                        <p class="card-text">Comparing theory results with the simulation results.</p>
+                        <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button" style="    background-color: rgb(43, 72, 99);
+                    border-color: rgb(24, 34, 54);">Learn more</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/tmanal/PCBdrawing.png); background-size: cover; background-position:center;">
+                <div class="card-body  d-flex align-items-end">
+                    <div>
+                        <h5 class="card-title">Full PCB Environment Test and Analysis</h5>
+                        <p class="card-text">Conducting a series of sine and random vibration tests on PCB on a vibration table. Comparing results with simulations.</p>
+                        <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button" style="    background-color: rgb(43, 72, 99);
+                    border-color: rgb(24, 34, 54);">Learn more</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100" style="background-image: url(./images/tmanal/shearstress.png); background-size: cover; background-position:center;">
+                  <div class="card-body  d-flex align-items-end">
+                      <div>
+                        <h5 class="card-title mt-auto">Shear stress in an Icesheet</h5>
+                        <p class="card-text mt-auto">Calculating shear stress profiles of an icesheet in MATLAB based on different models.</p>
+                        <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button" style="    background-color: rgb(43, 72, 99);
+                    border-color: rgb(24, 34, 54);">Learn more</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+</body>
