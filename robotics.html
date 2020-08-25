@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+  <title>Robotics</title>
+  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./robotics.css" />
+  <link rel="stylesheet" href="./fonts.css" />
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="./index.html"
+      ><div class="brand d-flex align-items-center">
+        <img class="image-back" src="images/nav-pages/backsign.png" />itsmubeen
+      </div></a
+    >
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutme.html"
+            ><button type="button" id="nav-but" class="btn" style="border:none;">About Me</button></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link typeform-share button" href="https://form.typeform.com/to/Cr3goT2L" data-mode="drawer_right" target="_blank" ><button type="button" id="nav-but" class="btn" style="border:none;">Contact Me</button></a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div
+      class="jumbotron jumbotron-fluid"
+      style="background-color: transparent;"
+    >
+        <div id="title-box">
+          <h1 class="display-4 d-none d-lg-block">Robotics</h1>
+          <h1 class="display-4 d-none d-md-block d-lg-none">Robotics</h1>
+          <h1 class="d-md-none">Robotics</h2>
+        </div>
+        <div id="image-box">
+          <img src="images/carousel/graphic/Robotics.png" style="max-height: 300px; max-width: 300px;"/>
+        </div>
+        <div id="sub-title-box">
+          <p style="font-size:15px; margin:0px; max-width: 600px;">By using microcontrollers and circuitry I am able to program various kinds of hardware like motors and sensors. I have worked with Arduino, Phidgets and Raspberry PI was interfaces and have used SSH clients to communicate with remote devices on LAN and WLAN. Robotics is an integral part of most engineering mechanisms that are often automated. In the space industry, for example most machines sent in space rely heavily on autonomity and robotics to perform tasks with accuracy and minimal supervision</p>
+        </div>
+        <div id="works" class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/robotics/YEC.jpg); background-size: cover; background-position:center;">
+                <div class="card-body">
+                  <div class="mt-auto">
+                    <h5 class="card-title">YEC: Crane prototype</h5>
+                    <p class="card-text">I was in a group that created a crane prototype as a part of the York Engineering Competition. We came in the first place.</p>
+                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/robotics/mpu6050.jpg); background-size: cover; background-position:center;">
+                <div class="card-body d-flex align-items-end">
+                  <div>
+                    <h5 class="card-title">A gymballed camera mount</h5>
+                    <p class="card-text">Wrote code to implement a simple gimbal mechanism using MPU6050 accelerometer and two stepped motors.</p>
+                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100" style="background-image: url(./images/robotics/raspi.jpg); background-size: 400px 400px; background-position:center;">
+                <div class="card-body d-flex align-items-end">
+                    <div>
+                        <h5 class="card-title">I2C interface from RasPi to MPU6050 sensor</h5>
+                        <p class="card-text">Setup of an I2C interface to recieve data from the sensor to Raspberry PI computer</p>
+                        <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button">Learn more</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </div>
+</body>

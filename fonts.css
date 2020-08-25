@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mulish:wght@500&family=Source+Sans+Pro&display=swap"); 
+.display-4{
+    font-family: 'Source Sans', sans-serif;
+    font-size:50px;
+}
+.display-3{
+    font-family: 'Source Sans', sans-serif;
+    font-size:60px;
+}
+p {
+    font-family: 'Mulish', sans-serif;  
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
