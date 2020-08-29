@@ -131,16 +131,61 @@ body {
 .card:hover {
   transform: scale(1.05);
 }
-.btn {
-  background-color:transparent;
+.learn {
+  background-color: transparent;
   border-color: rgb(255, 255, 255);
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
-.btn:hover {
-  background-position: 0 100%; 
+.learn:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.learn:focus {
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.learn:hover {
+  background-position: 0 100%;
   background-color: rgb(0, 60, 68);
   border-color: rgb(255, 255, 255);
-	color: #fff; 
+  color: #fff;
+}
+.down-btn {
+  background-color: rgb(0, 60, 68);
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.down-btn:not(:disabled):not(.disabled):active {
+  background-color: rgb(0, 60, 68);
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.down-btn:focus {
+  background-color: rgb(0, 60, 68);
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.down-btn:hover {
+  background-position: 0 100%;
+  background-color: rgb(0, 29, 32);
+  border-color: rgb(255, 255, 255);
+  color: #fff;
+}
+h4 {
+  color: rgb(0, 60, 68);
+  border-bottom: 2px solid rgb(0, 29, 32);;
 }

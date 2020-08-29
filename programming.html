@@ -81,7 +81,7 @@
                   <div class="mt-auto">
                     <h5 class="card-title">CS50 Finance: A stock management app</h5>
                     <p class="card-text">I developed a basic stock management app deployed using FLASK.</p>
-                    <a name="" class="btn btn-primary " href="http://fincs50.herokuapp.com/" role="button">Learn more</a>
+                    <a name="" class="learn btn btn-primary" href="http://fincs50.herokuapp.com/" role="button">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,9 @@
                   <div>
                     <h5 class="card-title">Cross-platform Programming</h5>
                     <p class="card-text">Cross-compiled a simple executable for Raspberry PI.</p>
-                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button" >Learn more</a>
+                    <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#cross-com">
+                      Learn more
+                    </button>
                   </div>
                 </div>
               </div>
@@ -103,7 +105,7 @@
                     <div>
                         <h5 class="card-title">CLI Programs</h5>
                         <p class="card-text">Repository of various CLI programs made in C and Python for the CS50 course.</p>
-                        <a name="" class="btn btn-primary " href="https://github.com/pmubeen/CS50-Programs" role="button">Learn more</a>
+                        <a name="" class="learn btn btn-primary " href="https://github.com/pmubeen/CS50-Programs" role="button">Learn more</a>
                     </div>
                 </div>
               </div>
@@ -114,7 +116,9 @@
                       <div>
                           <h5 class="card-title">Orbital Decay and Solar Radiation</h5>
                           <p class="card-text">Matlab programs made to calculate the orbital decay with height of objects in space. Also plotting ideal and actual Solar irradiance graphs for comparison.</p>
-                          <a name="" class="btn btn-primary " href="https://github.com/pmubeen/CS50-Programs" role="button">Learn more</a>
+                          <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#orb-dec">
+                            Learn more
+                          </button>
                       </div>
                   </div>
                 </div>
@@ -125,7 +129,9 @@
                         <div>
                             <h5 class="card-title">Transmission efficiency of ARQ protocols.</h5>
                             <p class="card-text">Matlab programs made to calculate the GO Back N, STOP and WAIT and SELECTIVE REPEAT ARQ protocols for different bit error rates.</p>
-                            <a name="" class="card-btn btn btn-primary " href="https://github.com/pmubeen/CS50-Programs" role="button">Learn more</a>
+                            <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#tran-arq">
+                              Learn more
+                            </button>
                         </div>
                     </div>
                   </div>
@@ -136,7 +142,9 @@
                         <div>
                             <h5 class="card-title">Calculating orbits using Kepler Laws</h5>
                             <p class="card-text">Matlab programs made to calculate various orbits based on a stepwise method using the Kepler Laws.</p>
-                            <a name="" class="btn btn-primary " href="https://github.com/pmubeen/CS50-Programs" role="button">Learn more</a>
+                            <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#kep-law">
+                              Learn more
+                            </button>
                         </div>
                     </div>
                   </div>
@@ -147,11 +155,342 @@
                         <div>
                             <h5 class="card-title">Orbital Lifetime</h5>
                             <p class="card-text">Using MATLAB and STK to simulate orbits and get data.</p>
-                            <a name="" class="btn btn-primary " href="https://github.com/pmubeen/CS50-Programs" role="button">Learn more</a>
+                            <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#orb-life">
+                              Learn more
+                            </button>
                         </div>
                     </div>
                   </div>
             </div>
           </div>
+    <!-- The Modal -->
+<div class="modal fade" id="cross-com">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title">Cross-platform Programming</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4>Summary</h4>
+        <p>The purpose of this is to familiarize, setup and communicate with a Raspberry PI computer. The PI computer is to be setup through the Raspian OS on a connected bootable disk. It is then to interface with a another computer, that communicates to it to transfer an executable built within a VM on it.</p>
+        <h4>Setting up the Raspberry PI computer</h4>
+        <ol>
+          <li>Downloaded the Raspian OS image file on a computer and flashed the image on a MicroSD card to create a bootable disk.</li>
+          <li>Inserted in the bootable disk in Raspberry computer. The HDMI cable is used connect it to an external monitor. An ethernet cable is used to connect it to the communicating computer. Peripherals like the mouse and keyboard are also connected.</li>
+          <li>The PI computer is powered on and the OS is booted.</li>
+          <li>SSH is enabled from the PI configuration.</li>
+          <li>The DHCP configuration is changed by accessing the dhcpcd.conf file on bash. It is changed so the computer has a static IP of 192.168.0.11 . This would be used to communicate with the PI.</li>
+        </ol>
+        <h4>Communicating with the Raspberry PI computer</h4>
+        <ol>
+          <li>Set up the MOBA-Xtreme SSH session with Raspberry PI computer through the static IP.</li>
+          <li>Ran the command startlxde to start a lightweight desktop environment on the computer.</li>
+        </ol>
+        <h4>Programming on Linux Mint VM</h4>
+        <ol>
+          <li>Initialized the VM on Virtual Box</li>
+          <li>Downloaded and extracted Raspi toolchain to the /opt directory.</li>
+          <li>Created an Hello World project that utilizes the cross compiler for Raspian OS. This was done by assigning the cross compiler prefix as arm-linux-gnueabhif- and path as /opt/cross-pi-gcc/bin</li>
+          <li>Built an executable based on the cross compiler.</li>
+        </ol>
+        <h4>Sending the executable to PI computer</h4>
+        <ol>
+          <li>Ensured that SSH was on by pinging the static IP the raspberry PI was assigned to.</li>
+          <li>Raspberry PI did not ping on the VM even though it responds to pings on the host machine. SSH is on</li>
+          <li>Tried to implement a secure copy by using scp command as follows with the command first, then the file address of the file to be copied and the hostname@ipaddress:/directory of the PI computer. scp Lab7 pi@192.168.0.11:/</li>
+          <li>As assumed the command failed with response “Host unreachable”. File transfer was not possible on the VM</li>
+          <li>The file sent on the host computer’s command line using the same scp command. The PI computer received the file.</li>
+        </ol>
+        <h4>Running the executable on PI computer</h4>
+        <ol>
+          <li>Opened bash and changed directory to the one containing the executable.</li>
+          <li>The executable is ran using the following command: ./Lab7</li>
+        </ol>
+        <h4>Results</h4>
+        <p>The bottom screenshot shows the output of the running the executable on the LXDE
+          <img src="./images/programming/cross-comp.png" class="img-fluid mx-auto"/>
+          The Raspberry PI was properly setup and functioning. A SSH session was successfully setup with PI computer on the Static IP. An executable was successfully built from the Hello World c++ project using the cross compiler. The SSH link could not be accessed on VM (One possible reason was no access to ethernet adapter within the VM. Added a bridged adapter to the ethernet adapter but this still didn’t solve the problem.). Hence secure copy to the PI computer didn’t run on the VM. File was nevertheless transferred to the Raspberry PI using secure copy on host PC (Windows). The executable successfully ran with the desirable output “Hello World”.
+        </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="orb-dec">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title">Orbital Decay and Radiation</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4>Calculating Orbital Decay</h4>
+        <p>We have a satellite orbiting Earth at the height of 250 km from surface. At this height atmospheric density is &rho;=3.25 x 10<sup></sup>-10</sup> kg m<sup>-3</sup> and the scale height of 9.12km. The satellite has a mass of 70kg, a crossectional area of 1.5 m<sup>2</sup>. Using this information I have calculated and plotted the orbital decay upto 10 orbits.
+        <img src="./images/programming/atmos-dens.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        <img src="./images/programming/atmos-dec.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        </p>
+        <h4>Solar Radiation spectrum</h4>
+        <p>Using Boltzmann formula for Irradiance, we can calculate the solar radiation spectrum across various wavelengths. This is plotted with the real data of solar spectrum that reflects atmospheric absorption. The results are as follows:
+        <img src="./images/programming/irrad-sol.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        The actual curve is not smooth. There are fluctuations resultant of actual fluctuations caused by solar oscillations and disturbances. Due to earth’s elliptical average, the irradiance value can vary a lot. Therefore due to these anomalies the actual solar constant would be smaller.
+        </p>
+        <h4>Download</h4>
+        <p>Click below to download the code for plots and calculations</p>
+        <a href="./assets/programming/orbitaldec-and-sol-spec.zip" download>
+          <button type="button" class="down-btn btn btn-primary">Download MATLAB Code</button>
+        </a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="tran-arq">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title">Transmission efficiency of ARQ protocols</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4>Calculating transmission for an MEO satellite</h4>
+        <p>Assuming a MEO satellite at a geocentric circular orbit of radius 9000km. It has a transmission rate of 4 kbps and the size of the frame is 136 bits. The bit error rate is kept at 10<sup>-3</sup>. The satellite uses the go-Back n ARQ protocol for a duration of 2hrs. Based on this information, I have calculated the transmission efficiency:
+        <img src="./images/programming/trans-go-back-n.PNG" class="img-fluid mx-auto d-block" style="max-height: 200px;"/>
+        However if all three protocols,  ‘Stop-and-Wait ARQ’, ‘Go-Back-n ARQ’ and ‘Selective Repeat ARQ’ are considered, which protocol allows for highest throughput or transmission efficiency?
+        <ul>
+          <li>For Go-Back N ARQ the transmission efficiency is calculated to be 56.7%</li>
+          <li>For Stop and Wait ARQ the transmission efficiency is 76.9%</li>
+          <li>For Selective Repeat ARQ the transmission efficiency is 77.4%</li>
+        </ul>
+        Therefore, Selective Repeat ARQ is the most efficient form of protocol for transmission. <br>
+        In the case where bit error rate is at 10<sup>-5</sup>
+        <ul>
+          <li>For Go-Back N ARQ the transmission efficiency increases to 99.2%</li>
+          <li>For Stop and Wait ARQ the transmission efficiency increases to 99.6%</li>
+          <li>For Selective Repeat ARQ the transmission efficiency increases to 99.72%</li>
+        </ul>
+        As the BER decreases to 10<sup>-5</sup>, the transmission efficiency reaches closer to 100%.
+        This trend can be better visualized when plotting the transmission efficiency with all the protocols with BER = [10<sup>-1</sup>,10<sup>-2</sup>,10<sup>-3</sup>,10<sup>-4</sup>,10<sup>-5</sup>]
+        <img src="./images/programming/stopnwait.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        <img src="./images/programming/selrepeat.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        <img src="./images/programming/gobackn.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        </p>
+        <h4>Download</h4>
+        <p>Click below to download the code for plots and calculations</p>
+        <a href="./assets/programming/arqtrans-efficiency.zip" download>
+          <button type="button" class="down-btn btn btn-primary">Download MATLAB code</button>
+        </a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="kep-law">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title">Orbital Decay and Solar Radiation</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4>Kepler's 1st Law (derived from the course lab manual)</h4>
+        <p>Kepler’s first law can be expressed mathematically, in polar coordinates, as:
+          <img src="./images/programming/formula.png" class="img-fluid mx-auto d-block" style="max-height: 50px;"/>
+          Where p is the semi-latus rectum and  is the eccentricity, p is defined as follows:
+          <img src="./images/programming/form-p.PNG" class="img-fluid mx-auto d-block"/>
+          Where a is the semi-major axis, and b is the semi-minor axis of the orbit. For closed orbits, the periapsis (minimum distance between the two bodies) and apoapsis (maximum) occur at:
+          <img src="./images/programming/form-apo-peri.PNG" class="img-fluid mx-auto d-block"/>
+          and the relationship relating the eccentricity to the major and minor axes is given by:
+          <img src="./images/programming/form-ecc.PNG" class="img-fluid mx-auto d-block"/>
+          and for a hyperbolic orbit, we have:
+          <img src="./images/programming/form-ecc-hyp.PNG" class="img-fluid mx-auto d-block"/>
+        </p>
+        <h4>Eccentricity plots based on Kepler's first law.</h4>
+        <p>Plotted the paths for various eccentricities on the same graph. Setted a = 20. Computed the radius using θ = 0 : 0.01 ∗ pi : 2 ∗ pi. Converted to cartesian coordinates and plot. Set the axes to equal scale by including the command: axis equal. Set the axis limits to x = [−40,80] and y = [−30,30] using the command: axis([-40 80 -30 30]).
+          <img src="./images/programming/ecc-graph.png" class="img-fluid mx-auto d-block"/>
+          The semi-major axis for each trajectory is:
+          <ul>
+            <li>The semi-minor axis for e=0 is 20.000000</li>
+            <li>The semi-minor axis for e=0.5 is 17.320508</li>
+            <li>The semi-minor axis for e=1.0 is 0.000000</li>
+            <li>The semi-minor axis for e=1.5 is 22.360680</li>
+          </ul>
+        </p>
+        <h4>Kepler's second law (derived from the course lab manual)</h4>
+        <p>In Kepler’s second law, we have the scenario where the change in area (dA) swept out by the orbit in a small amount of time time, dt is:
+          <img src="./images/programming/form-sec.PNG" class="img-fluid mx-auto d-block"/>
+        so long as the fractional change in time is consistent, this change in area is constant through out the entire orbit.
+        </p>
+        <h4>Testing Kepler's 2nd Law with Mars</h4>
+        <p>
+          Using data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html we find the first derivative of area relative to time: <br>
+          Speed at perihelion (vp) – 26.5 km/s, Perihelion distance (rp) – 2.06x108 km
+          <img src="./images/programming/area-ap.PNG" class="img-fluid mx-auto d-block"/>
+          Speed at aphelion (va) – 22.0 km/s, Aphelion distance (va) – 2.49x108 km
+          <img src="./images/programming/area-pe.PNG" class="img-fluid mx-auto d-block"/>
+          So da/dt is quite similar for both.
+          Calculations in MATLAB
+          All units in km
+          <ul>
+            <li>The r at perihelion is 206609480.000000</li>
+            <li>The v at perihelion is 26.571262</li>
+            <li>Fractional change in area at perihelion is 2744937340.591403</li>
+            <li>The r at aphelion is 249230520.000000</li>
+            <li>The v at aphelion is 22.027297</li>
+            <li>Fractional change in area at perihelion is 2744937340.591403</li>
+          </ul>
+          Plot for the orbit
+          <img src="./images/programming/plot.png" class="img-fluid mx-auto d-block">
+        </p>
+        <h4>Kepler's Third Law</h4>
+        <p>This can be stated as:
+          <img src="./images/programming/form-thrd.PNG" class="img-fluid mx-auto d-block">
+        </p>
+        <h4>Orbital plots of terresterial planets and gaseous planets</h4>
+        <img src="./images/programming/orb-terr.png" class="img-fluid mx-auto d-block">
+        <img src="./images/programming/orb-gas.png" class="img-fluid mx-auto d-block">
+        <p>The units are in seconds</p>
+        <ul>
+          <li>The time period for Mercury is 7579137.728477</li>
+          <li>The time period for Venus is 19361671.381209</li>
+          <li>The time period for Earth is 31477435.584332</li>
+          <li>The time period for Mars is 59185925.255163</li>
+          <li>The time period for Jupiter is 373707416.754456</li>
+          <li>The time period for Saturn is 933729803.486922</li>
+          <li>The time period for Neptune is 2648382260.608438</li>
+          <li>The time period for Uranus is 5184549079.706688</li>
+          <li>The time period for Pluto is 7808735669.732601s</li>
+        </ul>
+        <h4>Download MATLAB code</h4>
+        <p>Click below to download the code for plots and calculations</p>
+        <a href="./assets/programming/keplerlaws.zip" download>
+          <button type="button" class="down-btn btn btn-primary">Download</button>
+        </a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="orb-life">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title">Orbital Lifetime</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4>Summary</h4>
+        In this work I will study the effects of various atmospheric models on the orbital lifetime of satellites as well as iteratively solve problems in STK with the help of MATLAB. The reference parameters are given in the table below. 
+        <img src="./images/programming/para-tab.PNG" class="img-fluid mx-auto d-block" style="max-height: 250px;"/>
+        <h4>Calculating Orbital Lifetime under different atmospheric models</h4>
+        <p>Using the orbital parameters from <a href="https://heavensabove.com/orbit.aspx?satid=25544" target="blank" style="color:rgb(0, 60, 68);">https://heavensabove.com/orbit.aspx?satid=25544</a> and cross-platforming scenarios set in MATLAB.
+          <ul>
+            <li>Jacchia 71:<br>
+              The output for lifetime using Jacchia71 model:<br>
+              “AssignSat decay is estimated to be on 16 Jan 2021 17:06:53.432 after 8894 orbits.The lifetime is 1.5 years.”              
+            </li>
+            <li>Jacchia-Roberts<br>
+              The output for lifetime using  Jacchia-Roberts:<br>
+              “AssignSat decay is estimated to be on 17 Jan 2021 04:42:18.985 after 8902 orbits.The lifetime is 1.5 years.”
+            </li>
+            <li>Harris-Priester<br>
+              The output for lifetime using Harris-Priester:
+                “AssignSat decay is estimated to be on 23 Apr 2021 04:31:02.547 after 10412 orbits.The lifetime is 1.8 years.”
+            </li>
+          </ul>
+          Now, assuming the default atmospheric model is used, and in MATLAB, I will plot a time history of the Keplerian orbital elements and explain the differences.<br>
+          The default model is Jacchia70Lifetime. Using this model the Graphs are as follows (x axis is time in seconds for all graphs).<br>
+          <b>Semi Major Axis (units in km):</b><br>
+          <img src="./images/programming/sma.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+          Since the satellite will deorbit in 1.7 years, we might not see any big changes in the orbit size in a month. But small fluctuations are possible as the satellite might be affected by the gravity of other significant heavenly bodies such as Moon (due to its proximity) and Sun (due to its size and mass).<br>
+          <b>Eccentricity</b><br>
+          <img src="./images/programming/ecc.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+          Eccentricity of an orbit stays mostly common as angular momentum is conserved. Therefore, the changes in eccentricity are minute (scale of 10-4). The minute changes can be related to a plethora of factors, ranging anywhere from changes in external gravitational forces to thrust from incident sunlight, which are quite insignificant compared to the centripetal force causing the satellite to orbit.<br>
+          <b>Inclination</b><br>
+          <img src="./images/programming/inc.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+          Inclination is also dependent on momentum based on the following equation:
+          <img src="./images/programming/inc-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 50px;"/>
+          H is angular momentum. As we have previously mentioned, small changes happen to the angular momentum, which in turn affects the inclination as well.<br>
+          <b>Argument of Perigee</b><br>
+          <img src="./images/programming/arg-peri.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+          Argument of perigee is defined as the following formula: 
+          <img src="./images/programming/arg-peri-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 50px;"/>
+          The e stands for eccentricity vector and n is the vector pointing towards the ascending node. The variability in the eccentricity and as it will be later seen, the changes in the ascending node are the cause of these smooth fluctuations in the above graph.<br>
+          <b>Longititude of the Ascending Node</b><br>
+          <img src="./images/programming/raan.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+          The periodic fluctuations in the longitude reflect the periodic cycle of Earth’s rotation, which is skewed due to earth’s axial tilt. Since the fixed reference plane is the equator, the orbital plane wobbles around it every rotation, causing the change in the longitude of the ascending node.<br>
+          <b>True Anomaly</b>
+          <img src="./images/programming/tru-ano.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+          The regular periodic changes in the true anomaly is nothing but the indication of the satellite moving along the orbit. Therefore every time the satellite approaches the periapsis in the direction of the orbital velocity, true anomaly approaches 360 degrees and it resets to zero after that.
+        </p>
+        <h4>Designing a Hohmann transfer</h4>
+        In the following I have designed a Hohmann transfer such that the satellite starts off in an ISS orbit, and ends in an orbit that provides on average (over the scenario), 10 minutes of communication with the ground station. This is checked through plots of communication intervals against time in MATLAB. I have also explained my design choices and generated tables of semi-major axis and symmetry, solving the problem iteratively.<br>
+        <b>Design Choice 1</b><br>
+        I chose the Radius of Apoapsis as 7000 km as lower values gave average access time under 10 minutes. Higher orbits would be more expensive. Therefore this seems to be ideal. Heres a display of the STK screen with the orbit path and accesses:
+        <img src="./images/programming/stk-screen.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        The following graph displays the accesses and their communication duration over time. The time is seconds.
+        <img src="./images/programming/accesses.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        Communication duration for various access intervals fluctuate a lot. However the average comes to 733.003 seconds which is 12 minutes. This is slightly above the required duration, however it also offsets the lower intervals. Making most intervals above the threshold. This will help to maximise efficiency of each access interval.<br>
+        The following graph displays the semi-major axis over time. The time is seconds.
+        <img src="./images/programming/sma2.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        The steep early increase in the semi-major axis indicates the Hohmann transfer. The final line for semi-major axis is our final orbit.<br>
+        The following graph displays the eccentricity axis over time. The time is seconds.
+        <img src="./images/programming/ecc2.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+        The sudden increase in Eccentricity can be attributed to the transfer orbit that has more elliptic orbit than either the parking orbit or the final orbit.
+        <h4>Download the Matlab code (STK required)</h4>
+        <p>Click below to download the code for plots and calculations</p>
+        <a href="./assets/programming/keplerlaws.zip" download>
+          <button type="button" class="down-btn btn btn-primary">Download</button>
+        </a>     
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
     </div>
 </body>
