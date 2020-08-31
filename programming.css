@@ -187,5 +187,23 @@ body {
 }
 h4 {
   color: rgb(0, 60, 68);
-  border-bottom: 2px solid rgb(0, 29, 32);;
+  border-bottom: 2px solid rgb(0, 29, 32);
+  margin:auto; 
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 601px) {
+  h4{
+    font-size:30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h4{
+    font-size:20px;
+  }
+  h3{
+    font-size:20px;
+  }
+  ol {
+    padding-left: 20px;
+  }
 }

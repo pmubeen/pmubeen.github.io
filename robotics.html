@@ -81,7 +81,9 @@
                   <div class="mt-auto">
                     <h5 class="card-title">YEC: Crane prototype</h5>
                     <p class="card-text">I was in a group that created a crane prototype as a part of the York Engineering Competition. We came in the first place.</p>
-                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button">Learn more</a>
+                    <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#yec">
+                      Learn more
+                    </button>
                   </div>
                 </div>
               </div>
@@ -90,9 +92,11 @@
               <div class="card h-100" style="background-image: url(./images/robotics/mpu6050.jpg); background-size: cover; background-position:center;">
                 <div class="card-body d-flex align-items-end">
                   <div>
-                    <h5 class="card-title">A gymballed camera mount</h5>
+                    <h5 class="card-title">A gimballed camera mount</h5>
                     <p class="card-text">Wrote code to implement a simple gimbal mechanism using MPU6050 accelerometer and two stepped motors.</p>
-                    <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button">Learn more</a>
+                    <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#gymbal">
+                      Learn more
+                    </button>
                   </div>
                 </div>
               </div>
@@ -103,10 +107,171 @@
                     <div>
                         <h5 class="card-title">I2C interface from RasPi to MPU6050 sensor</h5>
                         <p class="card-text">Setup of an I2C interface to recieve data from the sensor to Raspberry PI computer</p>
-                        <a name="" class="btn btn-primary " href="./thermalanalysis.html" role="button">Learn more</a>
+                        <button type="button" class="learn btn btn-primary" data-toggle="modal" data-target="#i2c">
+                          Learn more
+                        </button>
                     </div>
                 </div>
               </div>
             </div>
+    </div>
+    <div class="modal fade" id="yec">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title">York Engineering Competition</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h4>Summary</h4>
+            <p>I was part of a team competing in the senior design competition at York Engineering Competition 2019. Our task was to develop a mechanism to lift an object from one point to other over a wall. The constraints of the task were as follows:
+            <ol>
+              <li>The mechanism should lie within a fixed area designated by a box at the end of wall line.</li>
+              <li>The object should not get outside of a designated area on the pickup and dropoff point.</li>
+              <li>No part of the object or the mechanism should come in contact of the wall.</li>
+              <li>A minimum of 10 boxes are to be transferred.</li>
+              <li>The code should be autonomous, i.e. the 1 min for setup and then the mechanism should not be interferred with.</li>
+              <li>There was budget limit for parts.</li>
+            </ol>
+            <img src="./images/robotics/test-env.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            We also had to present to a group of judges about our design and process. Both the task itself and presentation were part of grading system, but the task had a higher weightage. We were given about 8 hrs of time to develop our prototype and prepare the presentation.</p>
+            <h4>Our team</h4>
+            <p>Our team was diverse by discipline and it helped us in various aspects of the prototype building. We consisted of two space engineering students (me and Hassan), one mechanical engineering student (John) and an electrical engineering student (Shohon). John and Hassan had more experience in building mechanical parts so they were involved in building and designing the mechanism. I and Shohon had greater experience and expertise in programming so we worked on developing the code that would power the mechanism.</p>
+            <img src="./images/robotics/team.jpg" class="img-fluid mx-auto d-block" style="max-height: 500px;"/>
+            <h4>Our Design</h4>
+            <p>The design we decided on a crane based mechanism. Based on the scenario, it seemed a perfect choice as it was a tried and true method and the movements could be easily emulated based on a two axis rotation system. However the challenge was developing the clasping mechanism to grab the object, hold it securely while it is being transfered to the drop location over the barrier. We initially thought of going the default route of a hook and chain system. However this could become more complicated and expensive. Additionally the object didnt have any contraptions to attach a hook. Our final design was inspired from chopsticks by having a pincer type movement where one arm was fixed and other arm was powered by the motor. The arm was angled to present an ideal lateral surface to provide traction to the object.
+              <img src="./images/robotics/proto-cad.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            Since minimizing cost was one of the parameters for judgement of design, we reused most of the resources. For example the cardboard used for making the clamping surface was used to create the housing of the electronics. Elastic bands were only used for the moving joints and hot glue was used for static structures. Motors that were used were stepped motors that were powered by the computer for testing to conserve the battery for the competition. Additional ice-cream sticks were used to reinforce the structure.</p>
+            <h4>Our competitive edge: Self-built testing environment.</h4>
+            <p>Two models of the structure were provided by the organizers, which fell in extreme shortage since a lot of teams had to share them. Therefore we decided to make our own testing environment that could be used on demand. Since our mechanism was 100% automated we had to make sure the constant values of rotation were accurate. This was dependent to incessant testing, which was greatly helped by having our own testing environment.</p>
+            <img src="./images/robotics/self-test-env.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            <h4>The Competition</h4>
+            <p>The first part of the competition was to complete the tasks using our prototype. Out of all the teams, ours was the only one that had sucessfully completed the task. In-fact it completed it in half the time. It was so accurate that the only variable that could improve it was speed. The only competition we faced was from the team after us. These group of students had a lot of feathers in their cap and had attended several competitions and won. They were clearly more experienced than us, as this was our first such competition. They had implemented a device that was far more complex as it was controlled by inputs from the computer. But due to the size of the environment was small and a significant delay between the device and the interface that made it difficult to control the device. Due to this they weren't able to complete the task.</p>
+            <img src="./images/robotics/proto-1.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            <p>Nevertheless, their strong previous experience was reflected in their presentation, which was way better than us. We had much to learn about engineering presentations and our focus was primarily on our prototype. I learned from them that a better way was to create a template before the competition that could be used to create the more formalized and robust presentation. This is what I did for the Ontario Engineering Competition in the future. In the cumulative judgement, we came 1st in the competition. I felt extremely proud of me and my team mates. Our focus on simplicity and functionality, our diverse backgrounds, novel perspectives and planning was the key to our success. We were chosen to represent York University in the Ontario Engineering Competition held in Winters 2020.</p>
+            <img src="./images/robotics/winners.jpg" class="img-fluid mx-auto d-block" style="max-height: 500px;"/>
+            <h4>Download the presentation, Arduino code and prototype design.</h4>
+            <p>Click below to download the code for arduino, presentation and the model of prototype.</p>
+            <a href="./assets/programming/keplerlaws.zip" download>
+              <button type="button" class="down-btn btn btn-primary">Download</button>
+            </a>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="gymbal">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title">Gimballed camera mount</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h4>Summary</h4>
+            <p>The purpose of this task is to employ both the MPU6050 sensor and a stepped motor to develop a gimballed camera mount that provides stability, i.e. relative stiffness to movement. To make this happen, we have to use the WiringPI api to control the servo movements and the MPU6050 example given by Richard Hirst which employs the use of the header files provided by the manufacturer.</p>
+            <h4>Design</h4>
+            <p>The code implemented converts between the degree values of yaw and pitch from the sensor to PWM values. Since each pulse of pwm has a period of 20 hz that has a 1-2 ms duty cycle that defines the movement. In the WiringPI this control is defined by two variables “range” and “clock”. The chosen values for range = 4000 and clock = 98. Using this I was able to determine the what each pwm pulse value in the duty cycle translates for in degrees by the following method.<br>
+            First we find the length of each value in the range with respect to the period.
+            <img src="./images/robotics/duty-cyc-form1.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+            Now we find the what each value of range translates to in degrees. As the servo can be turned from 0 to 180 degrees, these angles correspond linearly with the duty cycle length.
+            <img src="./images/robotics/duty-cyc-form2.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+            It puts the 0 point on -90 deg value so the Centrepoint is 0. Then using reversing these calculation I can find the exact pwm value that movement corresponds. Since the max value clockwise is 180 which corresponds to 400 value on the range. Therefore the countermove will have the opposite value.<br>
+            Heres the formula to find movement value.
+            <img src="./images/robotics/duty-cyc-form3.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+            And the counter move value is
+            <img src="./images/robotics/duty-cyc-form4.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+            </p>
+            <h4>Code Design</h4>
+            <p>
+              Just for accuracy, I have adapted the MPU6050 demo.dmp included in the example by Richard Hirst, using the header files that calculates ypr values from the raw acceleration values and the gravity vector sourced from the sensor. The original code displayed values in YPR and Euler angles. My code removes all the unnecessary bits for Euler angles and displaying the values. It also moves the looping part out of a loop function and into the main function but using the an infinite for loop. This allows me to use the YPR values in WiringPI code that I earlier made within the main function. Instead of writing constant value to the motor, it uses the YPR value to align itself counteractively. It also checks if the YPR value to be written is within limit -90 to 90.
+              <img src="./images/robotics/gimbaldesign.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            </p>
+            <h4>Comments and Conclusions</h4>
+            <p>With this lab we were able to connect what we learned about controlling two hardware using RaspberryPI computer to implement a real life solution. The real life problem was camera stability and the solution we tested was a prototype of real life three axes gimbal scaled down to two axes and one sensor. Due to current circumstances (COVID 19), we were unable to test our ideas out on an actual apparatus. This would allow us to interact with the prototype, check for failures, understand failure causes and build iteratively towards the perfect solution. What could certainly help was a virtual lab environment that could emulate such devices. Not the perfect answer since this would still not include all real life problems.</p>
+            <h4>Download the C++ code</h4>
+            <p>Click below to download the code for plots and calculations</p>
+            <a href="./assets/robotics/mpu6050.cpp" download>
+              <button type="button" class="down-btn btn btn-primary">Download</button>
+            </a>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="i2c">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title">I2C interface from RasPi to MPU6050 sensor</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h4>Summary</h4>
+            <p>The objective of this task is to be able to connect MPU6050 sensor to RasPi via a I2C interface and develop an executable that can read the data from the sensor. The executable is compiled and transferred from the external computer to RasPi using an SSH channel along ethernet cable.</p>
+            <h4>Establishing connection with Pi and Laptop</h4>
+            <p>The Raspian was already flashed on the MicroSD. SSH was enabled by adding a file named ssh to the SD card boot file. We had the network connection of the laptop to an autoconfigured ip address.  We connected to the RasPi via the windows terminal. We then changed the RasPi setting to enable the I2C interface.
+            </p>
+            <h4>Setting up MPU6050 and RasPi</h4>
+            <p>
+              The RasPi was powered down first Then using jumper wires we connected the SDA,SCL, 5V and GND ports on the sensor to the I2C interface on the RasPi according to configuration seen below.
+              <img src="./images/robotics/raspi.jpg" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            </p>
+            <h4>Putting it all together: Displaying data from MPU6050</h4>
+            <p>The files from the example code was copied to a blank makefile project in the eclipse using the Cross GCC compiler. We had configure the makefile to use the cross gcc compiler by adding the CXX = arm-gnueabihf-linux. After trying to build the executable it ran into an error in the 3d cpp and .h files due to unavailable binaries. These were excluded from the makefile. The executable compiled successfully. However running it on the RasPi, it failed, citing failure to find the sensor. It was realised because in the code it was using the I2C0 interface instead of the I2C1 address that the sensor was using. This was fixed by changing the default address in MPU6050_Default_Address in MPU6050.h file to use AD1 address for the I2C1 interface found using the command:  pi@raspberrypi:~/$ i2cdetect -y 1.</p>
+            <h4>Results</h4>
+            <p>After running the executables the pi outputted each type of values it read from the sensors. The output can be seen below, this changed with changing of the orientation of the sensors.
+            <img src="./images/robotics/sensor-data.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            <b>Demo_raw</b><br>
+            Running this executable gives the raw values given by the accelerometer and gyroscope. The accelerometer gives the acceleration values in three orthogonal directions, the values are given in g. The gyroscope shows angular velocity in three axes and are given in deg/s-1. These combine to represent the 6 degrees of freedom for the sensor.<br>
+            <b>Demo_dmp</b>
+            <img src="./images/robotics/dmo-dmp.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+            The demo dump file displays the raw data from the sensors in the form of quaternions and ypr frames of motion. This relative to the reference frame provided on the sensor.
+            Overall the results were adequate. RasPi’s I2C interface was correctly configured to allow a steady data stream from the sensor.  The sensor was working fine as it was responding to changes in environment. The final executable was properly built on the Cross GCC compiler without any build issues and correctly read input from the I2C1 port where the sensor was connected to.</p>
+            <h4>Lessons Learned</h4>
+            <ol>
+              <li>I learned about how the I2C interface works and implemented it in conjunction with the MPU6050 sensor.</li>
+              <li>I learned about the interfaces and their pin locations on the RasPi computer</li>
+              <li>I also learned a gist of how the example code worked by learning what each of the files was for and how to cross compile.</li>
+              <li>I learned how to enable SSH without having to interface with the RasPi OS.</li>
+              <li>I learned how to configure Raspi settings on the SSH terminal and use it to enable the I2C interface.</li>
+              <li>I learned how to find the physical address of the I2C connected to the sensor and implement it within the code so the executable listened to the right I2C interface.</li>
+            </ol>
+            <h4>Download the C++ code</h4>
+            <p>Click below to download the code for plots and calculations</p>
+            <a href="./assets/robotics/i2c-mpu6050.zip" download>
+              <button type="button" class="down-btn btn btn-primary">Download</button>
+            </a>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
     </div>
 </body>
