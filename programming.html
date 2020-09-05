@@ -24,10 +24,16 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"
   ></script>
+  <script
+    src="./loader.js"
+  ></script>
   <link rel="stylesheet" href="./programming.css" />
   <link rel="stylesheet" href="./fonts.css" />
 </head>
-<body>
+<body onload="myFunction()">
+  <div id="loader">
+    <img src="images/avatar.png" class="img-fluid load-logo" style="max-height: 200px;"/>
+  </div>
   <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
     <a class="navbar-brand" href="./index.html"
       ><div class="brand d-flex align-items-center">
@@ -74,7 +80,7 @@
         <div id="sub-title-box">
           <p style="font-size:15px; margin:0px; max-width: 600px;">I have worked with Linux based and Windows based OS to develop programs for a variety of functions. I am greatly comfortable with Python and MATLAB and familiar with C and C++. Although most programs I have written are command line programs, I am currently learning how to implement them with a Web GUI. I can develop python-based web development using Flask and I am currently learning more prevalent frameworks like MERN stack. Here are some of my works:</p>
         </div>
-        <div id="works" class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+        <div id="works" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4">
             <div class="col mb-4">
               <div class="card h-100" style="background-image: url(./images/programming/fincs50.png); background-size: cover; background-position:center;">
                 <div class="card-body d-flex align-items-end">
@@ -123,7 +129,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col mb-4">
+            <div class="col mb-4" style="margin-left:auto;">
                 <div class="card h-100" style="background-image: url(./images/programming/BER.PNG); background-size: cover; background-position:center;">
                     <div class="card-body d-flex align-items-end">
                         <div>
@@ -149,7 +155,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col mb-4">
+            <div class="col mb-4 last" style="margin-right:auto;">
                 <div class="card h-100" style="background-image: url(./images/programming/orbital-life.png); background-size: cover; background-position:center;">
                     <div class="card-body d-flex align-items-end">
                         <div>

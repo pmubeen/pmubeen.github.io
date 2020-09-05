@@ -98,10 +98,6 @@ body {
   margin-left: auto;
   margin-top: 20px;
 }
-#works {
-  max-width: 1000px;
-  margin: 40px auto 0px auto;
-}
 .card {
   border: 0px;
   border-radius: 10px;
@@ -131,16 +127,89 @@ body {
 .card:hover {
   transform: scale(1.05);
 }
-.btn {
-  background-color:transparent;
+.learn {
+  background-color: transparent;
   border-color: rgb(255, 255, 255);
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
-.btn:hover {
-  background-position: 0 100%; 
+.learn:not(:disabled):not(.disabled):active {
+  background-position: 0 100%;
   background-color: rgb(43, 72, 99);
   border-color: rgb(255, 255, 255);
-	color: #fff; 
+  color: #fff;
+}
+.learn:focus {
+  background-position: 0 100%;
+  background-color: rgb(43, 72, 99);
+  border-color: rgb(255, 255, 255);
+  color: #fff;
+}
+.learn:hover {
+  background-position: 0 100%;
+  background-color: rgb(43, 72, 99);
+  border-color: rgb(255, 255, 255);
+  color: #fff;
+}
+.down-btn {
+  background-color: rgb(43, 72, 99);
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.down-btn:not(:disabled):not(.disabled):active {
+  background-color: rgb(43, 72, 99);
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.down-btn:focus {
+  background-color: rgb(43, 72, 99);
+  border-color: rgb(255, 255, 255);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.down-btn:hover {
+  background-position: 0 100%;
+  background-color: rgb(26, 43, 59);
+  border-color: rgb(255, 255, 255);
+  color: #fff;
+}
+h4 {
+  color: rgb(43, 72, 99);
+  border-bottom: 2px solid rgb(0, 29, 32);
+  margin: auto;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 601px) {
+  h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  ol {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .last {
+    margin-left: auto;
+  }
+}
+.modal-body img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pdfobject-container {
+  height: 100%;
 }

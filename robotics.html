@@ -24,10 +24,16 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"
   ></script>
+  <script
+    src="./loader.js"
+  ></script>
   <link rel="stylesheet" href="./robotics.css" />
   <link rel="stylesheet" href="./fonts.css" />
 </head>
-<body>
+<body onload="myFunction()">
+  <div id="loader">
+    <img src="images/avatar.png" class="img-fluid load-logo" style="max-height: 200px;"/>
+  </div>
   <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
     <a class="navbar-brand" href="./index.html"
       ><div class="brand d-flex align-items-center">
