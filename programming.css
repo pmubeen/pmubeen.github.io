@@ -207,12 +207,36 @@ h4 {
     padding-left: 20px;
   }
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .last {
-    margin-left:auto;
+    margin-left: auto;
   }
 }
 .modal-body img {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  h1 {
+    font-family: "Source Sans", sans-serif !important;
+    font-size: 45px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-family: "Source Sans", sans-serif !important;
+    font-size: 60px !important;
+  }
 }

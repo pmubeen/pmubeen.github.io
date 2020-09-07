@@ -28,10 +28,64 @@
   font-size: 20px;
   border-radius: 10px;
   border: 1px solid white;
-  padding:4px 10px;
+  padding: 4px 10px;
   transition: background-color 0.5s, color 0.5s;
 }
 .brand:hover {
-    background-color: white;
-    color:rgb(0, 0, 0);
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px !important;
   }
+  p {
+    font-size: 14px !important;
+  }
+  .thermal-text {
+    color: rgb(6, 0, 65);
+  }
+  .graphic {
+    max-height: 225px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px !important;
+  }
+  p {
+    font-size: 15px !important;
+    padding-top: 20px;
+  }
+  .graphic {
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  h1 {
+    font-family: "Source Sans", sans-serif !important;
+    font-size: 45px !important;
+  }
+  p {
+    font-size: 16px !important;
+    padding-top: 20px;
+  }
+  .graphic {
+    max-height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-family: "Source Sans", sans-serif !important;
+    font-size: 60px !important;
+  }
+  p {
+    font-size: 18px !important;
+    padding-top: 20px;
+  }
+  .graphic {
+    max-height: 500px;
+  }
+}
