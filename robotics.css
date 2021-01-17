@@ -53,7 +53,7 @@
   margin-bottom: 0px;
 }
 body {
-  background-image: url("./images/carousel/1.jpg");
+  background-image: url("./images/carousel/1.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
@@ -214,11 +214,17 @@ h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 40px !important;
   }
+  .raspi {
+    margin:auto;
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
   h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 40px !important;
+  }
+  .raspi {
+    margin:auto;
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {

@@ -4,6 +4,7 @@
   -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.75);
+  z-index: 4  !important;
 }
 #nav-but {
   background-color: rgb(29, 29, 29);
@@ -50,17 +51,17 @@
 }
 .jumbotron-fluid {
   padding: 100px 0px 0px 0px;
+  margin-bottom: 15px;
 }
 body {
-  background-image: url("./images/carousel/4.jpg");
+  background-image: url("./images/carousel/4.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 .text-container {
-  margin-bottom: 20px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   max-width: 800px;
   height: fit-content;
   background-color: rgb(233, 233, 233);
@@ -139,6 +140,71 @@ body {
   max-height: 300px;
   object-fit: cover;
 }
+.box-cont {
+  height: fit-content;
+  position: relative;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin: 0px -20px 0px -20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.box-cont .card {
+  background-color: #e1c6ff;
+  color: #50475a;
+  border-radius: 30px;
+  max-width: 250px;
+  height: 100%;
+  margin: auto;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 1);
+}
+.card-cont {
+  margin: 10px auto;
+}
+.card-title {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.end {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(229, 189, 188, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(229, 189, 188, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 27%,
+    rgb(229, 189, 188) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffe0df",GradientType=1);
+  color: #b1615c;
+}
+.google-slides-container{
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.google-slides-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 767) {
   h1 {
     font-family: "Montserrat", sans-serif;
@@ -178,6 +244,12 @@ body {
   .special {
     margin-top: 60px;
   }
+  .left {
+    margin-right: 5px;
+  }
+  .right {
+    margin-left: 5px;
+  }
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   h1 {
@@ -189,6 +261,12 @@ body {
   }
   .special {
     margin-top: 60px;
+  }
+  .left {
+    margin-right: 5px;
+  }
+  .right {
+    margin-left: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -202,4 +280,10 @@ body {
   .special {
     margin-top: 60px;
   }
-
+  .left {
+    margin-right: 5px;
+  }
+  .right {
+    margin-left: 5px;
+  }
+}

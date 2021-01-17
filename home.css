@@ -1,3 +1,4 @@
+/*Navbar*/
 .navbar {
   background: rgb(0, 0, 6);
   background: linear-gradient(
@@ -7,15 +8,7 @@
     rgba(2, 0, 36, 0) 100%
   );
 }
-.carousel-inner {
-  background-size: cover;
-  background-position: center;
-}
-.graphic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #nav-but {
   background-color: rgb(29, 29, 29);
   color: white;
@@ -34,6 +27,69 @@
 .brand:hover {
   background-color: white;
   color: rgb(0, 0, 0);
+}
+
+/*Carousel*/
+.carousel-inner {
+  background-size: cover;
+  background-position: center;
+}
+#carousel-1 {
+  background-image: url(/images/carousel/0.webp);
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+#carousel-1 a {
+  background-color: rgb(48, 43, 99);
+  border-color: rgb(26, 24, 54);
+}
+#carousel-2 {
+  background-image: url(/images/carousel/2.webp);
+  color: white;
+  background-position: bottom;
+  background-size: cover;
+}
+#carousel-2 a {
+  background-color: rgb(43, 72, 99);
+  border-color: rgb(24, 34, 54);
+}
+#carousel-3 {
+  background-image: url(/images/carousel/4.webp);
+  color: white;
+  background-position: bottom;
+  background-size: cover;
+}
+#carousel-3 a {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(99, 99, 99);
+}
+#carousel-4 {
+  background-image: url(/images/carousel/1.webp);
+  color:rgb(80, 22, 22);
+  background-position: bottom;
+  background-size: cover;
+}
+#carousel-4 a {
+  background-color: rgb(80, 22, 22);
+  border-color: rgb(138, 37, 37);
+}
+#carousel-5 {
+  background-image: url(/images/carousel/5.webp);
+  color:white;
+  background-position: bottom;
+  background-size: cover;
+}
+#carousel-5 a {
+  background-color: rgb(0, 60, 68);
+  border-color: rgb(0, 128, 128);
+}
+
+/*Carousel Cont*/
+.graphic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   h1 {

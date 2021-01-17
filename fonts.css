@@ -77,3 +77,6 @@ h2 {
 body {
   overflow-y: hidden;
 }
+#title-box h1 {
+  margin:0;
+}

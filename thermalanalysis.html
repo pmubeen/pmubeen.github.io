@@ -73,9 +73,7 @@
       style="background-color: transparent;"
     >
         <div id="title-box">
-          <h1 class="display-4 d-none d-lg-block">Thermal and Mechanical Analysis</h1>
-          <h1 class="display-4 d-none d-md-block d-lg-none" style="font-size: 40px;">Thermal and Mechanical Analysis</h1>
-          <h1 class="d-md-none">Thermal and Mechanical Analysis</h2>
+          <h1>Thermal and Mechanical Analysis</h1>
         </div>
         <div id="image-box">
           <img src="images/carousel/graphic/TManalysis.png" style="max-height: 300px; max-width: 300px;"/>
@@ -85,7 +83,7 @@
         </div>
         <div id="works" class="row row-cols-1 row-cols-md-2 row-cols-lg-3" style="max-width: 1000px; margin:40px auto 0px auto;">
             <div class="col mb-4">
-              <div class="card h-100" style="background-image: url(./images/tmanal/ebox.png); background-size: cover; background-position:center;">
+              <div class="card h-100" style="background-image: url(./images/tmanal/ebox.webp); background-size: cover; background-position:center;">
                 <div class="card-body">
                   <div class="mt-auto">
                     <h5 class="card-title">Thermal Analysis of an Electronics Box</h5>
@@ -98,7 +96,7 @@
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card h-100" style="background-image: url(./images/tmanal/plate.png); background-size: cover; background-position:center;">
+              <div class="card h-100" style="background-image: url(./images/tmanal/plate.webp); background-size: cover; background-position:center;">
                 <div class="card-body d-flex align-items-end">
                   <div>
                     <h5 class="card-title">FEM thermal analysis of a plate in MATLAB</h5>
@@ -111,7 +109,7 @@
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card h-100" style="background-image: url(./images/tmanal/pcbmodes.png); background-size: cover; background-position:center;">
+              <div class="card h-100" style="background-image: url(./images/tmanal/pcbmodes.webp); background-size: cover; background-position:center;">
                 <div class="card-body d-flex align-items-end">
                     <div>
                         <h5 class="card-title">Natural frequencies of a PCB.</h5>
@@ -124,7 +122,7 @@
               </div>
             </div>
             <div class="col mb-4" style="margin-left:auto;">
-              <div class="card h-100" style="background-image: url(./images/tmanal/PCBdrawing.png); background-size: cover; background-position:center;">
+              <div class="card h-100" style="background-image: url(./images/tmanal/PCBdrawing.webp); background-size: cover; background-position:center;">
                 <div class="card-body  d-flex align-items-end">
                     <div>
                         <h5 class="card-title">Full PCB Environment Test and Analysis</h5>
@@ -137,7 +135,7 @@
               </div>
             </div>
             <div class="col mb-4 last" style="margin-right:auto;">
-                <div class="card h-100" style="background-image: url(./images/tmanal/shearstress.png); background-size: cover; background-position:center;">
+                <div class="card h-100" style="background-image: url(./images/tmanal/shearstress.webp); background-size: cover; background-position:center;">
                   <div class="card-body  d-flex align-items-end">
                       <div>
                         <h5 class="card-title mt-auto">Shear stress in an Icesheet</h5>
@@ -164,35 +162,35 @@
                 <div class="modal-body">
                   <h4>The Model</h4>
                   <p>The model given is an electronics box housing 2 CCAs (containing two EEE junctions each), a CHASSIS to house them which is sandwiched between Pedestal that contains RF connections. The bottom pedestal is screwed to a space craft radiator. Here is a picture of the model.
-                  <img src="./images/tmanal/elec-box-mod.jpg" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                  <img src="./images/tmanal/elec-box-mod.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                   Here’s the cross-section various displaying units and components in the subsystems:
-                  <img src="./images/tmanal/elec-box-cross.jpg" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                  <img src="./images/tmanal/elec-box-cross.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                   </p>
                   <h4>Meshing</h4>
                   <p>
                     <b>0D Meshes</b><br>
                     For the EEEs’ a mesh point was defined on each of the components. Based on the design, separate collectors were made for each component. These were referenced as U51 for rectangular footprint, U84 for square footprint for the top CCA and U23 for rectangular footprint, U32 for square footprint on the bottom CCA. A 0D mesh was made on each of them defined using the mesh point. No radiation defined for these meshes.<br>
                     For TOP CCA and BOTTOM CCA respectively. Material Properties: 17% Copper PWB
-                    <img src="./images/tmanal/cca.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/cca.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>2D Meshes</b><br>
                     2D meshes were defined for S/C radiator and the CCAs. Entire surface area was selected for meshing, including the EEE junctions as they were defined at a mesh point. Properties: Thin shell for 8 layer PWB (0.062 in), Material: 17% Copper PWB. No Radiation Separate mesh collector for each CCA.<br>
                     For S/C radiator. Properties: Material: Aluminium 6061, Thin Shell for radiator with assumed 50 mm, thermo optical properties defined for top and bottom surface as a aluminized Teflon 10 mil, sample 2.<br>
                     TOP CCA (Top, Profile and Bottom view):
-                    <img src="./images/tmanal/cca2d.PNG" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/cca2d.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     BOTTOM CCA (Top, Profile and Bottom):
-                    <img src="./images/tmanal/cca2d2.PNG" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/cca2d2.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     S/C Radiator
-                    <img src="./images/tmanal/radiator.jpg" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/radiator.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>3D Meshes</b><br>
                     3D meshes were developed for bodies such as the top and bottom pedestal parts and the CHASSIS. Both had no radiative properties and Material was Aluminium 6061 Separate mesh collectors for each pedestal and chassis.
                     3D view of Meshed Chassis
-                    <img src="./images/tmanal/3dchassis.jpg" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/3dchassis.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     3D view of Meshed Pedestal
-                    <img src="./images/tmanal/3dpedes.jpg" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/3dpedes.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                   </p>
                   <h4>Materials and Properties</h4>
                   <p>
-                    <img src="./images/tmanal/mat-table.PNG" class="img-fluid mx-auto d-block" style="max-height:200px;"/>
+                    <img src="./images/tmanal/mat-table.webp" class="img-fluid mx-auto d-block" style="max-height:200px;"/>
                     *Calculation:<br>
                     17% CU and 83% FR-4<br>
                     From lecture slides<br>
@@ -213,23 +211,23 @@
                     G_#4screw = 0.26 W/K<br>
                     G_TOTAL = NxG_#4screws = 8x0.26 = 1.04 W/K<br>
                     Bottom of CCA to CHASSIS (Conductance through screws)<br>
-                    <img src="./images/tmanal/chassis-top-cca.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
-                    <img src="./images/tmanal/chassis-top-cca2.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-top-cca.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-top-cca2.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>Bottom CCA to Chassis</b><br>
                     Calculation of conduction<br>
                     N = 9 #4screws (extra screw in the middle)<br>
                     G_#4screw = 0.26 W/K<br>
                     G_TOTAL = NxG_#4screws = 9x0.26 = 2.34 W/K<br>
                     CCA to CHASSIS (Conductance through screws)<br>
-                    <img src="./images/tmanal/chassis-bot-cca.PNG" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-bot-cca.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>Chassis to Pedestal Top</b><br>
                     Calculation of conduction<br>
                     N = 4 #6screws<br>
                     G_#6screw = 0.42 W/K<br>
                     G_TOTAL = NxG_#6screws = 4x0.42 = 1.68 W/K<br>
                     CHASSIS to Pedestal top (Conductance through screws)<br>
-                    <img src="./images/tmanal/chassis-ped-top.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
-                    <img src="./images/tmanal/chassis-ped-top2.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-ped-top.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-ped-top2.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>Chassis to Pedestal Bottom</b><br>
                     Calculation of conduction<br>
                     N = 6 #6screws<br>
@@ -240,18 +238,18 @@
                     h=2.0 W/mk		l=3mm			A of chassis = 118 mm x 142 mm (measured in NX)<br>
                     G_interface = hxA/L = 173.56 W/K		Total Conductance = 173.56+2.52 W/K<br>
                     CHASSIS to Pedestal top (Conductance through screws)<br>
-                    <img src="./images/tmanal/chassis-ped-bot.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
-                    <img src="./images/tmanal/chassis-ped-bot2.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-ped-bot.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/chassis-ped-bot2.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>CCAs to EEE</b><br>
                     Each EEE has 50 W/C conductance<br>
                     CCA TOP to U51s
-                    <img src="./images/tmanal/topcca-u51.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/topcca-u51.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     TOP CCA to U84
-                    <img src="./images/tmanal/topcca-u84.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/topcca-u84.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     Bottom CCA to U23
-                    <img src="./images/tmanal/bottomcca-u23.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/bottomcca-u23.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     Bottom CCA to U32
-                    <img src="./images/tmanal/bottomcca-u32.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/bottomcca-u32.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>Pedestal Bottom to S/C radiator</b><br>
                     Calculation of conduction<br>
                     N = 6 #6screws<br>
@@ -260,22 +258,22 @@
                     Interface Cool Pad CPR 7156 (Pg 827 Space Thermal Control Handbook by Gilmore)<br>
                     Gtotal = G_int+G_screw = 120.11<br>
                     CHASSIS to Pedestal top (Conductance through screws)<br>
-                    <img src="./images/tmanal/ped-bot-sc-rad.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
-                    <img src="./images/tmanal/ped-bot-sc-rad2.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/ped-bot-sc-rad.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/ped-bot-sc-rad2.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>Thermal Loads</b><br>
                     All EEEs with 0.5 W thermal load (only 0D mesh point) and CCAs with 12 W thermal load (full PWB).
                     <h4>Hot and Cold Cases</h4>
                     <b>Hot Case</b><br>
                     Hot case utilizes all the components with orbital heating on the S/C radiator caused by solar, earth IR and irradiation. The orbit is a circular orbit with altitude of 500 km and a beta angle of 90 degree. The S/C radiator faces x direction in direct sunlight. The solar flux is at a maximum of 1423 W/m^2 and Earth IR and albedo are 273 W/m^2 and 0.4 respectively. All components are active with CCAs and EEEs with active thermal loads. Couldn’t prepare a model to test override thermoptical properties of alumnized Teflon coated radiator. Failure to solve attributed to an unknown factor that nullified the view factor of the radiator.<br>
                     Temperature of the radiator at t =5
-                    <img src="./images/tmanal/temp-graph-rad.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/temp-graph-rad.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     Temperature of the Electronics box. Ie. Pedestal top
-                    <img src="./images/tmanal/temp-graph-elec-box.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/temp-graph-elec-box.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <img src="./images/tmanal/hotcasegrad.gif" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                     <b>Cold Case</b><br>
                     Cold case has no running electrical components with minimal radiative flux, only environmental loss. The orbit is also circular but with a beta angle of 0 deg and no IR or reflected flux and is under shadow, i.e. perpendicular to sun rays. Heater module between pedestal and radiator designed to keep temperatures within critical function ranges. Due to failure simulating the setup, was unsuccessful to determine the minimum duty cycle for the heater.<br>
                     Temperature across the electronics box at t = 0. Fairly plain due to no internal heating<br>
-                    <img src="./images/tmanal/temp-graph-cold-case.png" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
+                    <img src="./images/tmanal/temp-graph-cold-case.webp" class="img-fluid mx-auto d-block" style="max-height:300px;"/>
                   <h4>Download the NX sim files (Siemens NX required)</h4>
                   <p>Click below to download the NX sim files.</p>
                   <a href="https://drive.google.com/file/d/1iRNjzEornmYW3mHFjXisjSL57UBLqwUa/view?usp=sharing" target="blank">
@@ -305,7 +303,7 @@
                 <div class="modal-body">
                   <h4>Defining the object</h4>
                   <p>The object is defined as follows with respect to my student number:
-                    <img src="./images/tmanal/plate.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/plate.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                     The mesh size is defined to be dx=4 cm. The task is to find the change in temperature distribution in the plate within increments of 12, from 0 to 60 seconds using Matlab and NX. Compare both results.
                   </p>
                   <h4>Deriving the temperature distributions</h4>
@@ -317,33 +315,33 @@
                       <li>No convection</li>
                     </ol>
                     Utilizing the heat diffusion equation in 2D
-                    <img src="./images/tmanal/heat-dif-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/heat-dif-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     Adapting eqn for time-based changes
-                    <img src="./images/tmanal/heat-dif-form2.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/heat-dif-form2.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     Putting in energy balance and interior node equations
-                    <img src="./images/tmanal/heat-dif-form3.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/heat-dif-form3.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     Utilizing the equations for different cases<br>
                     <b>Case 1</b>
-                    <img src="./images/tmanal/case-1.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-1-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-1.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-1-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     <b>Case 2</b>
-                    <img src="./images/tmanal/case-2.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-2-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-2.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-2-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     <b>Case 3</b>
-                    <img src="./images/tmanal/case-3.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-3-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-3.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-3-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     <b>Case 4</b>
-                    <img src="./images/tmanal/case-4.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-4-form.png" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-4.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-4-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     <b>Case 5</b>
-                    <img src="./images/tmanal/case-5.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-5-form.png" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-5.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-5-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     <b>Case 6</b>
-                    <img src="./images/tmanal/case-6.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-6-form.png" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-6.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-6-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                     <b>Case 7</b>
-                    <img src="./images/tmanal/case-7.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/case-7-form.png" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                    <img src="./images/tmanal/case-7.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/case-7-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   </p>
                   <h4>Matlab Algorithm</h4>
                   <p>
@@ -361,19 +359,19 @@
                   <h4>The Results</h4>
                   <p>
                     From the NX:
-                    <img src="./images/tmanal/nx-t0.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/nx-t1.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/nx-t2.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/nx-t3.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/nx-t4.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/nx-t5.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/nx-t0.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/nx-t1.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/nx-t2.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/nx-t3.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/nx-t4.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/nx-t5.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                     Results from MATLAB:
-                    <img src="./images/tmanal/matlab-t0.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/matlab-t1.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/matlab-t2.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/matlab-t3.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/matlab-t4.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/matlab-t5.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/matlab-t0.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/matlab-t1.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/matlab-t2.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/matlab-t3.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/matlab-t4.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/matlab-t5.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                   </p>
                   <h4>Conclusion</h4>
                   <p>The results vary mostly due to significant errors caused by using larger time stepsizes in MATLAB. Since code in Matlab is not efficient in providing calculations for smaller stepsizes as they are heavy for the computations, the NX is able to provide a much smoother plot. I also was not able to deliver the desired plot in Matlab since I wasn’t able to code it.<br>
@@ -409,7 +407,7 @@
                   <h4>Theory</h4>
                   <p>
                   The natural frequency of the specimen PCB with relation to a similar known PCB is given by:
-                  <img src="./images/tmanal/pcb-freq-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                  <img src="./images/tmanal/pcb-freq-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   f = natural frequency<br>
                   a = length<br>
                   b = width<br>
@@ -418,19 +416,19 @@
                   μ = poisson’s ratio<br>
                   E = modulus of Elasticity<br>
                   In terms of similarity the Case 13 is most like the PCB given. It has the same configuration in terms of the fixture<br>
-                  <img src="./images/tmanal/pcb-dwg.PNG" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                  <img src="./images/tmanal/pcb-dwg.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                   Its properties are as follows: length a1 = 6 inch, width b1 = 4 inch, h1 = 0.10 inch, density γ1 = 0.208 lb/inch3, Young’s Modulus (Flexural Modulus) E1 = 10.5x106 lb/in2, Poisson ratio = 0.12<br>
                   The material properties derived are of Epoxy Fibreglass from the reference provided.(“Avoiding Vibration in Odd-Shaped Printed-Circuit Boards”, Steinberg, D.S.,)<br>
                   The properties of the specimen PCB: length a2 = 304.8x0.040= 12 inch, width b2 = 243.7x0.040 = 9.6 inch, h2 = 1.6x0.040 = 0.06 inch, density (with the holes)<br>
-                  <img src="./images/tmanal/poisson-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                  <img src="./images/tmanal/poisson-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   Young’s Modulus E2 =  44.1 GPa or 6.40x106 (from Matweb), Poisson’s ratio:
-                  <img src="./images/tmanal/poisson-form2.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                  <img src="./images/tmanal/poisson-form2.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   Therefore, the first natural frequency:
-                  <img src="./images/tmanal/first-nat-freq.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                  <img src="./images/tmanal/first-nat-freq.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   The second natural frequency:
-                  <img src="./images/tmanal/sec-nat-freq.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                  <img src="./images/tmanal/sec-nat-freq.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   The third natural frequency:
-                  <img src="./images/tmanal/thrd-nat-freq.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                  <img src="./images/tmanal/thrd-nat-freq.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                   </p>
                   <h4>Comparison with NX calculations</h4>
                   <p>
@@ -439,9 +437,9 @@
                     The hand calculated values are off by one magnitude.<br>
                     The reason for this is that the approximation made is dependent on the similarity of the case PCB with the specimen PCB. Since the case PCB is made of different material than the specimen PCB (epoxy fiberglass instead of glass epoxy prepreg) which might exacerbate the margin of error within each mathematical operation. This method is not as exact as the differential method that NX uses, which allows for a higher degree of accuracy as the elemental analysis is more thorough than a general body analysis.<br>
                     Here are mode shapes for the three frequencies in order:
-                    <img src="./images/tmanal/first-mode-shp.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/sec-mode-shp.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
-                    <img src="./images/tmanal/third-mode-shp.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/first-mode-shp.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/sec-mode-shp.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/third-mode-shp.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                   </p>
                   <h4>Download the NX sim files (Siemens NX required)</h4>
                   <p>Click below to download the NX sim files. Note: File larger than 800 MB.</p>
@@ -503,13 +501,13 @@
                   <p>The purpose of this task is to find the behaviour of the shear stress of an ice sheet under different conditions.
                     <ol>
                       <li>Constant density, with shear stress as a function of depth (z).</li>
-                      <img src="./images/tmanal/const-dens-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                      <img src="./images/tmanal/const-dens-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                       <li>Variable density, (therefore shear stress as function of density (ρ) and depth (z)</li>
-                      <img src="./images/tmanal/variable-dens-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                      <img src="./images/tmanal/variable-dens-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                       Where density is a function of pressure
-                      <img src="./images/tmanal/dens-press-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                      <img src="./images/tmanal/dens-press-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                       pressure is given by
-                      <img src="./images/tmanal/press-form.PNG" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
+                      <img src="./images/tmanal/press-form.webp" class="img-fluid mx-auto d-block" style="max-height: 100px;"/>
                       <li>To find the depth of the fracturing level (where the stress (variable density) crosses 2 MPa) as a function of the slope angle.</li>
                     </ol>
                   </p>
@@ -526,35 +524,35 @@
                       <ol>
                         <li>Calculating and Graphing shear stress with constant density and stress with variable density as a function of x and depth (m) as function of y superimposed on the same plot. Calculating the percent error of the constant density shear stress to variable density shear stress and plotting on a different figure.</li>
                         <b>Initialization</b>
-                      <img src="./images/tmanal/init-code-1.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                      <img src="./images/tmanal/init-code-1.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                       <b>Loops (iterative calculations)</b>
-                      <img src="./images/tmanal/loops-code-1.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                      <img src="./images/tmanal/loops-code-1.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                       The above uses the equations defined in the introduction. For constant density it directly calculates the shear stress with the constant density initialised in the previous part and appends it to an indexed value (z+1) in the respective vector. For variable density it first calculates the pressure, appends it to the respective vector, then uses this value to calculate the density. This variable density is then used to calculate shear stress which is stored in a different vector indexed by (z+1). Note: the shear stress also calls on the previous value to use in calculations. Then the error is calculated as the abs value of difference between the two shear stresses over the variable density times 100. The layer (z) is then incremented by 1 and loop repeats as long the z stays under 61. This ensures that the calculations happen till the depth of 3km.<br>
                       <b>Graphs</b>
-                      <img src="./images/tmanal/code-graphs-1.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                      <img src="./images/tmanal/code-graphs-1.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                       The z is redefined as a vector [0,3000] with increments of 50. Both the shear stresses are superimposed and plotted as functions of x against z on y axis. The axes are labeled, the graph titled and legend is added. On a different figure the error is graphed as function of y against z on the x axis. The ylim accommodates a range of [0,100] on the graph. X and y axes are labeled and the graph is titled.
                       <li>An adaptation of Code 1 but to calculate fracturing level depth as a function of slope angle and graph it.</li>
                       <b>Initialization</b>
-                      <img src="./images/tmanal/init-code-2.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                      <img src="./images/tmanal/init-code-2.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                       Note that the shear stress, pressure and density are a matrices of 16 columns now, to accommodate for the changing angle. Slope angle is a vector with values [5,20] with an increment of 5.<br>
                       <b>Loops</b>
-                      <img src="./images/tmanal/loops-code-2.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                      <img src="./images/tmanal/loops-code-2.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                       This time a for loop iterates for different angle values. Before starting the calculation, the shear stress is initialised. Then a for loop calculates shear stress for different layers with respective angles. Within the for loop is an if statement that checks if the stress is close to the fracturing level and its depth has not already been calculated (first value close to fracturing level).<br>
                       If the condition is true the if statement adds the layer depth to the resp matrix.<br>
                       <b>Graphs</b>
-                      <img src="./images/tmanal/code-graphs-2.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                      <img src="./images/tmanal/code-graphs-2.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                       Plots the angles (deg) on horizontal axis and resp depth on y axis (m). The plot is labeled and titled. The y axis is limited to a range of [2500,2700].
                     </ol>
                   </p>
                   <h4>Results</h4>
                   <ol>
                     <li>Constant density shear stress vs variable density shear stress (angle 10 deg)</li>
-                    <img src="./images/tmanal/results-const-dens.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/results-const-dens.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                     Fracturing level approx. 1300 m from graph
                     <li>Percent error of constant density shear stress with respect to variable density shear stress.</li>
-                    <img src="./images/tmanal/results-perc-error.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/results-perc-error.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                     <li>Fracturing level depth vs slope angle</li>
-                    <img src="./images/tmanal/results-frac-lvl-dpth.png" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
+                    <img src="./images/tmanal/results-frac-lvl-dpth.webp" class="img-fluid mx-auto d-block" style="max-height: 300px;"/>
                   </ol>
                   <h4>Discussions and Conclusions</h4>
                   <p>

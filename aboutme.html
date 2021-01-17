@@ -1,120 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>About me</title>
-  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" 
-  content="Hi there! My name is Mubeen and this is my website. If you want to know me better, this is the page. Click here to learn more!">
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-  src="./loader.js"
-  ></script>
-  <link rel="stylesheet" href="./aboutme.css" />
-  <link rel="stylesheet" href="./fonts.css" />
-</head>
-<body onload="myFunction()">
-  <div id="loader">
-    <img src="images/avatar.png" class="img-fluid load-logo" style="max-height: 200px;"/>
-  </div>
-  <nav class="navbar navbar-expand-sm navbar-dark">
-    <a class="navbar-brand" href="./index.html"
-      ><div class="brand d-flex align-items-center">
-        <img class="image-back" src="images/nav-pages/backsign.png" />itsmubeen
-      </div></a
-    >
-    <button
-      class="navbar-toggler d-lg-none"
-      type="button"
-      data-toggle="collapse"
-      data-target="#collapsibleNavId"
-      aria-controls="collapsibleNavId"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="./aboutme.html"
-            ><button type="button" id="nav-but" class="btn">About Me</button></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link typeform-share button" href="https://form.typeform.com/to/Cr3goT2L" data-mode="drawer_right" target="_blank"><button type="button" id="nav-but" class="btn">Contact Me</button></a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-        </li>
-      </ul>
+  <head>
+    <title>About me</title>
+    <link
+      rel="icon"
+      href="./images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hi there! My name is Mubeen and this is my website. If you want to know me better, this is the page. Click here to learn more!"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./loader.js"></script>
+    <link rel="stylesheet" href="./aboutme.css" />
+    <link rel="stylesheet" href="./fonts.css" />
+  </head>
+  <body onload="myFunction()">
+    <div id="loader">
+      <img
+        src="images/avatar.png"
+        class="img-fluid load-logo"
+        style="max-height: 200px"
+      />
     </div>
-  </nav>
-  <div class="container-fluid">
-    <div
-      class="jumbotron jumbotron-fluid"
-      style="background-color: transparent;"
-    >
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <a class="navbar-brand" href="./index.html"
+        ><div class="brand d-flex align-items-center">
+          <img
+            class="image-back"
+            src="images/nav-pages/backsign.png"
+          />itsmubeen
+        </div></a
+      >
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutme.html"
+              ><button type="button" id="nav-but" class="btn">
+                About Me
+              </button></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link typeform-share button"
+              href="https://form.typeform.com/to/Cr3goT2L"
+              data-mode="drawer_right"
+              target="_blank"
+              ><button type="button" id="nav-but" class="btn">
+                Contact Me
+              </button></a
+            >
+            <script>
+              (function () {
+                var qs,
+                  js,
+                  q,
+                  s,
+                  d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q);
+                }
+              })();
+            </script>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div
+        class="jumbotron jumbotron-fluid"
+        style="background-color: transparent"
+      >
         <div id="title-box">
           <h1>About me.</h1>
         </div>
         <div id="image-box">
-          <img src="images/carousel/graphic/Profile.png" style="max-height: 300px; max-width: 300px;"/>
+          <img
+            src="images/carousel/graphic/Profile.png"
+          />
         </div>
         <div id="sub-title-box">
-          <p style="font-size:15px; margin:0px;"><b>Bachelors in Space Engineering</b>, <i>York University, Toronto, ON</i></p>
-          <p style="font-size:13px; margin-bottom:5px;">Fall 2017 - Summer 2022</p>
-          <div class="social-button"><a href="https://www.linkedin.com/in/mubeen-p-847b1a89/" target="_blank"><img src="./images/social/linkedin.png"/></a></div>
-          <div class="social-button"><a href="https://github.com/pmubeen" target="_blank"><img src="./images/social/github.png"/></a></div>
-          <div class="social-button"><a href="https://www.facebook.com/profile.php?id=100012159376274" target="_blank"><img src="./images/social/fb.png"/></a></div>
-          <div class="social-button"><a href="https://www.instagram.com/mubeenpadaniya/" target="_blank"><img src="./images/social/insta.png"/></a></div>
-          <div class="social-button"><a href="mailto:mubeenp@my.yorku.ca"><img src="./images/social/email.png"/></a></div>
+          <p>
+            <b>Bachelors in Space Engineering</b>,
+            <i>York University, Toronto, ON</i>
+          </p>
+          <p style="font-size: 13px; margin-bottom: 5px">
+            Fall 2017 - Summer 2022
+          </p>
+          <div class="social-button">
+            <a
+              href="https://www.linkedin.com/in/mubeen-p-847b1a89/"
+              target="_blank"
+              ><img src="./images/social/linkedin.png"
+            /></a>
+          </div>
+          <div class="social-button">
+            <a href="https://github.com/pmubeen" target="_blank"
+              ><img src="./images/social/github.png"
+            /></a>
+          </div>
+          <div class="social-button">
+            <a
+              href="https://www.facebook.com/profile.php?id=100012159376274"
+              target="_blank"
+              ><img src="./images/social/fb.png"
+            /></a>
+          </div>
+          <div class="social-button">
+            <a href="https://www.instagram.com/mubeenpadaniya/" target="_blank"
+              ><img src="./images/social/insta.png"
+            /></a>
+          </div>
+          <div class="social-button">
+            <a href="mailto:mubeenp@my.yorku.ca"
+              ><img src="./images/social/email.png"
+            /></a>
+          </div>
         </div>
+      </div>
+      <div class="text-container container">
+        <h2>Hi there, I am Mubeen!</h2>
+        <p class="text">
+          Well... whats a "Mubeen" or, more appropriately who is Mubeen? Lets see how I would define myself!
+        </p>
+        <div class="row box-cont" style="z-index: 1;">
+          <div class="col-md-5 col-12" style="margin:auto;">
+            <img class="mx-auto" src="./images/aboutme/thissguy.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-7 col-12" style="margin-top: 10px;">
+            <p class="h2">Mubeen</p>
+            <p>[moo-been]<br>
+              <i>noun</i>
+              <ol>
+                <li>a very curious person with general interest in gaining knowledge.</li>
+                <li>an initially shy person, that becomes quite talkative when comfortable.</li>
+                <li>not the most athletic person, but loves playing sports.</li>
+              </ol>
+              <i>synonyms: </i>bookworm, light-hearted, fast-learner, articulate, considerate 
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="row box-cont" style="z-index: 0; padding-top: 30px; margin-top: -20px; background-color: #c090c5; color:#fde9ff">
+        <div class="col-12" style="margin-bottom: 10px;"><h2>Some quick facts about me.</h2></div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title">Born</h5>
+              <img class="card-img" src="./images/aboutme/cake.png" style="max-height: 100px; width: 100px;"/>
+              <p class="card-text" style="margin-top: 10px;">12th April 1999<br>Mumbai, India<br></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title">Interests</h5>
+              <img class="card-img" src="./images/aboutme/ai.png" style="max-height: 100px; width: 100px;"/>
+              <p class="card-text" style="margin-top: 10px;">History, Space, A.I, and Global Affairs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title">Hobbies</h5>
+              <img class="card-img" src="./images/aboutme/Reading.png" style="max-height: 100px; width: 100px;"/>
+              <p class="card-text" style="margin-top: 10px;">Reading, Coding, Sports and Cooking</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title">My Heroes</h5>
+              <img class="card-img" src="./images/aboutme/heroes.png" style="max-height: 100px; width: 100px;"/>
+              <p class="card-text" style="margin-top: 10px;">Elon Musk, J.R.R Tolkien</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 10px; color:rgb(35, 34, 65);">
+          <div class="col-12" style="margin-bottom: 10px;"><h2>Technical Skills</h2></div>
+            <div class="col-sm-4 col-12" style="margin: 5px 0px;">
+            <div class="mx-auto skill-cont prog">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#Programming" aria-expanded="false"
+                    aria-controls="Programming">
+                  Programming
+                </button>
+              <div class="collapse" id="Programming">
+                <p class="h5" style="border-bottom:1px solid white;">Web development</p>
+                <li>
+                  Flask
+                </li>
+                <li>
+                  Javascript              
+                </li>
+                <li>
+                  HTML & CSS
+                </li>
+                <li>
+                  Bootstrap
+                </li>
+                <p class="h5" style="border-bottom:1px solid white;">Programming</p>
+                <li>
+                  Python
+                </li>
+                <li>
+                  Matlab              
+                </li>
+                <li>
+                  C and C++
+                </li>
+                <li>
+                  Matlab
+                </li>
+                <li>
+                  SQL
+                </li>
+                <p class="h5" style="border-bottom:1px solid white;">Applied in:</p>
+                Orbital Dynamics, image manipulation, simple web user-credential based apps, image recovery, cryptography etc.
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-4 col-12" style="margin: 5px 0px;">
+              <div class="mx-auto skill-cont aal">
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#Analytical" aria-expanded="false"
+                      aria-controls="Analytical">
+                    Analytical
+                  </button>
+                <div class="collapse" id="Analytical">
+                  <p class="h5" style="border-bottom:1px solid white;">Mechanical</p>
+                  <li>
+                    Nx Nastran              
+                  </li>
+                  <li>
+                    Matlab
+                  </li>
+                  <p class="h5" style="border-bottom:1px solid white;">Thermal</p>
+                  <li>
+                    Matlab
+                  </li>
+                  <li>
+                    Nx Thermal              
+                  </li>
+                  <li>
+                    Nx Space Systems Thermal
+                  </li>
+                  <p class="h5" style="border-bottom:1px solid white;">Electrical</p>
+                  <li>LT Spice</li>
+                  <p class="h5" style="border-bottom:1px solid white;">Space</p>
+                  <li>STK</li>
+                  <p class="h5" style="border-bottom:1px solid white;">Applications</p>
+                  Mechanical: Calculating stress, strain and tension, modes of frequencies, frequency response (static, exponential and random shock input) etc.<br>
+                  Thermal: Calculating thermal fluxes, failure, thermal expansion, radiation dose, temperatures, conduction etc.<br>
+                  Electrical: Designing circuit for a desired function.
+                </div>
+              </div>
+              </div>
+              <div class="col-sm-4 col-12" style="margin: 5px 0px;">
+                <div class="mx-auto skill-cont prac">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#Practical" aria-expanded="false"
+                        aria-controls="Practical">
+                    Practical
+                    </button>
+                  <div class="collapse" id="Practical">
+                    <li>
+                      Solidworks
+                    </li>
+                    <li>
+                      Makerbot
+                    </li>
+                    <li>
+                      ASME Standards
+                    </li>
+                    <li>
+                      Prototyping
+                    </li>
+                    <li>
+                      Arduino
+                    </li>
+                    <li>
+                      Raspberry PI
+                    </li>
+                    <p class="h5" style="border-bottom:1px solid white;">Applications</p>
+                    Designing and building basic robots, machines with complex mechanisms, designing completely defined models, with respectable conformances and 3D printing them.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12" style="margin: 10px 0px;"><h2>Non-Technical Skills</h2></div>
+              <div class="col-sm-4 col-12" style="margin: 5px 0px;">
+                <div class="mx-auto skill-cont eng">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#Engineering" aria-expanded="false"
+                        aria-controls="Engineering">
+                      Engineering
+                    </button>
+                  <div class="collapse" id="Engineering">
+                    <li>
+                      Professional Engineering
+                    </li>
+                    <li>
+                      Design Thinking
+                    </li>
+                    <li>
+                      Systems Engineering
+                    </li>
+                    <li>
+                      Mechanisms & Dynamics
+                    </li>
+                    <li>
+                      Material selection, design and testing
+                    </li>
+                    <li>
+                      Life Cycle Assessment
+                    </li>
+                    <li>
+                      Remote Sensing (Radar, Lidar, Seismology)
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-12" style="margin: 5px 0px;">
+                <div class="mx-auto skill-cont mng">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#Management" aria-expanded="false"
+                        aria-controls="Management">
+                      Management
+                    </button>
+                  <div class="collapse" id="Management">
+                    <li>
+                      Agile
+                    </li>
+                    <li>
+                      Waterfall
+                    </li>
+                    <li>
+                      Risk Assessment and Management
+                    </li>
+                    <li>
+                      SCAMPER
+                    </li>
+                    <li>
+                      Financial Modelling
+                    </li>
+                    <li>
+                      FMEA
+                    </li>
+                    <li>
+                      Entreprenuership: User Needs Validation, Market Validation, Rollout Strategies, Unique Value Proposition etc.
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-12" style="margin: 5px 0px;">
+                <div class="mx-auto skill-cont per">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#Personal" aria-expanded="false"
+                        aria-controls="Personal">
+                      Personal
+                    </button>
+                  <div class="collapse" id="Personal">
+                    <li>
+                      Communication
+                    </li>
+                    <li>
+                      Teamwork
+                    </li>
+                    <li>
+                      Creativity
+                    </li>
+                    <li>
+                      Adaptability
+                    </li>
+                    <li>
+                      Problem Solving
+                    </li>
+                    <li>
+                      Time-management
+                    </li>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="text-container container">
-      <p class="intro">Hi, there! My name is Mubeen Padaniya and I am really excited to see you here. I was born in Mumbai, India in 1999, where I spent most of my life. In seventh grade, I had the special opportunity to study IB in an up and coming residential school, The Aga Khan Academy in Hyderabad, India. In 2017 I graduated from high school and with much deliberation came to study undergrad in Space Engineering at York University in Toronto, Canada.
-      </p>
-      <img src="./images/aboutme/meincan.jpg" class="image img-fluid mx-auto d-block" alt="Me in Canada"/>
-      <div class="text-heading"><h2 style="margin-top:40px">Why Space?</h2></div>
-      <img src="./images/aboutme/space.png" class="image img-fluid float-right d-sm-block d-none" alt="Space"/>
-      <p style="margin-top: 10px;">Since childhood, I have always been quite interested in the mysteries of the universe. I remember my sister giving me The Astronomy Encyclopedia for my 8th birthday. I used to sit in one corner of the house understanding the wonderful phenomena in space such as nebulas, galaxies and stars. In school, physics was my favourite subject and I was always involved in scientific debates, clubs and competitions, being inquisitive about any new concepts I learned. This interest gradually progressed as I selected to do my high school thesis in the study of radiation blocking properties of linear and particulate polarizers. Eventually I decided to pursue Space Engineering at York University in Canada.
-      </p>
-      <img src="./images/aboutme/space.png" class="image img-fluid mx-auto d-sm-none d-block" alt="Responsive image"/>
-      <div class="text-heading"><h2>What are my passions?</h2></div>
-      <p style="margin-top: 10px;">I really love to learn more about almost anything from science to phenomena. I spend most of my leisure time reading articles online, watching infotainment channels on Youtube or even discussing various matters with my colleagues. I am not good at small talk though.
-      <img src="./images/aboutme/frisbee.jpg" class="image img-fluid float-left d-sm-block d-none" alt="Responsive image"/>
-      <img src="./images/aboutme/frisbee.jpg" class="image img-fluid mx-auto d-sm-none d-block" alt="Responsive image"/>
-      </p>
-      <p>I am not a sports fanatic. I don't follow any clubs or teams but I still enjoy playing and watching games with my friends. Almost every evening we get out. If the weather is good we might have a game of ultimate frisbee, soccer, football or basketball. Otherwise we would be playing futsal or basketball indoors.</p>
-      <p>Being an independent student, I started cooking as soon as I got my own place. But instead of a neccesity, it has turned into a therapeutic activity for me. Like after a stressful exam, I would often try cooking new recipes.</p>
-      <div class="text-heading special"><h2>Me in five years.</h2></div>
-      <p style="margin-top: 10px;">I think a really important metric in planning one's ambitions visualizing where you want to be in five years. And then pan out the steps you need to do to get there. The success of this strategy is dependent on how plausible is the vision.
-      <p>
-      For the five years after my graduation I want to be working in either robotics or remote sensing at reputable aerospace company like MDA. This is a challenging goal as the competition is high and I haven't done COOP yet. If I graduate without any COOP experience, I would want to gain some professional experience in tech sector working with a engineering firm or startups, probably on jobs related to programming hardware. The skills, knowledge and experience could translate into the aerospace industry and this would also provide me with a backup.
-      <img src="./images/aboutme/spacex.jpg" class="image img-fluid float-left d-md-block d-none" alt="Responsive image"/>
-      <img src="./images/aboutme/spacex.jpg" class="image img-fluid mx-auto d-md-none d-block" alt="Responsive image"/>
-      </p>
-      <p>
-      If I am working in my dream job, I want employ the concepts of AI and computer vision to develop a new line of robotic devices that can easily self-replicate and improve over time mechanically and intellectually. I also want my design to focus on scalability based on materials available, especially if used for interplanetary systems, which can make things greatly cheaper. This aligns a vision that humanity's interplanetary expansion is rapid, sustainable and industry focused; that can meet the ever growing material and energy needs while making earth greener.
-      </p>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
